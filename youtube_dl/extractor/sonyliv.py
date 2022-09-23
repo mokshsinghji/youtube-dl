@@ -109,4 +109,5 @@ class SonyLIVIE(InfoExtractor):
             'episode': episode,
             'episode_number': int_or_none(metadata.get('episodeNumber')),
             'release_year': int_or_none(metadata.get('year')),
+            'subtitle': metadata.get("subtitle").get("subtitleUrl")
         }
